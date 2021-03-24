@@ -35,6 +35,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/8209c8dc/Ejercicio_1.o \
+	${OBJECTDIR}/_ext/8209c8dc/Ejercicio_2.o \
+	${OBJECTDIR}/_ext/8209c8dc/Ejercicio_3.o \
+	${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o \
 	${OBJECTDIR}/ejemplo02.o \
 	${OBJECTDIR}/ejercicio01.o
 
@@ -62,6 +66,26 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/_ext/8209c8dc/Ejercicio_1.o: ../../../Downloads/Ejercicio\ 1.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/Ejercicio_1.o ../../../Downloads/Ejercicio\ 1.cpp
+
+${OBJECTDIR}/_ext/8209c8dc/Ejercicio_2.o: ../../../Downloads/Ejercicio\ 2.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/Ejercicio_2.o ../../../Downloads/Ejercicio\ 2.cpp
+
+${OBJECTDIR}/_ext/8209c8dc/Ejercicio_3.o: ../../../Downloads/Ejercicio\ 3.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/Ejercicio_3.o ../../../Downloads/Ejercicio\ 3.cpp
+
+${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o: ../../../Downloads/ordenamiento.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o ../../../Downloads/ordenamiento.cpp
 
 ${OBJECTDIR}/ejemplo02.o: ejemplo02.cpp
 	${MKDIR} -p ${OBJECTDIR}

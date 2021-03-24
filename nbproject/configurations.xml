@@ -12,8 +12,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>../../../Downloads/Ejercicio 1.cpp</itemPath>
+      <itemPath>../../../Downloads/Ejercicio 2.cpp</itemPath>
+      <itemPath>../../../Downloads/Ejercicio 3.cpp</itemPath>
       <itemPath>ejemplo02.cpp</itemPath>
       <itemPath>ejercicio01.cpp</itemPath>
+      <itemPath>../../../Downloads/ordenamiento.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -37,7 +41,10 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="ejemplo02.cpp" ex="false" tool="1" flavor2="0">
+      <item path="../../../Downloads/ordenamiento.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -60,6 +67,17 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="../../../Downloads/Ejercicio 1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../../Downloads/Ejercicio 2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../../Downloads/Ejercicio 3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../../Downloads/ordenamiento.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="ejemplo02.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ejercicio01.cpp" ex="false" tool="1" flavor2="0">
