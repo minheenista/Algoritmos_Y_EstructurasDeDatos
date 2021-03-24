@@ -35,12 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/8209c8dc/Ejercicio_1.o \
-	${OBJECTDIR}/_ext/8209c8dc/Ejercicio_2.o \
-	${OBJECTDIR}/_ext/8209c8dc/Ejercicio_3.o \
-	${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o \
+	${OBJECTDIR}/TareaOrdenamiento.o \
 	${OBJECTDIR}/ejemplo02.o \
-	${OBJECTDIR}/ejercicio01.o
+	${OBJECTDIR}/ejercicio01.o \
+	${OBJECTDIR}/tarea_ejercicio01.o \
+	${OBJECTDIR}/tarea_ejercicio02.o \
+	${OBJECTDIR}/tarea_ejercicio03.o
 
 
 # C Compiler Flags
@@ -67,25 +67,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras.exe: ${OBJECTF
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/_ext/8209c8dc/Ejercicio_1.o: ../../../Downloads/Ejercicio\ 1.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
+${OBJECTDIR}/TareaOrdenamiento.o: TareaOrdenamiento.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/Ejercicio_1.o ../../../Downloads/Ejercicio\ 1.cpp
-
-${OBJECTDIR}/_ext/8209c8dc/Ejercicio_2.o: ../../../Downloads/Ejercicio\ 2.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/Ejercicio_2.o ../../../Downloads/Ejercicio\ 2.cpp
-
-${OBJECTDIR}/_ext/8209c8dc/Ejercicio_3.o: ../../../Downloads/Ejercicio\ 3.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/Ejercicio_3.o ../../../Downloads/Ejercicio\ 3.cpp
-
-${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o: ../../../Downloads/ordenamiento.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o ../../../Downloads/ordenamiento.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TareaOrdenamiento.o TareaOrdenamiento.cpp
 
 ${OBJECTDIR}/ejemplo02.o: ejemplo02.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -96,6 +81,21 @@ ${OBJECTDIR}/ejercicio01.o: ejercicio01.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ejercicio01.o ejercicio01.cpp
+
+${OBJECTDIR}/tarea_ejercicio01.o: tarea_ejercicio01.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tarea_ejercicio01.o tarea_ejercicio01.cpp
+
+${OBJECTDIR}/tarea_ejercicio02.o: tarea_ejercicio02.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tarea_ejercicio02.o tarea_ejercicio02.cpp
+
+${OBJECTDIR}/tarea_ejercicio03.o: tarea_ejercicio03.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tarea_ejercicio03.o tarea_ejercicio03.cpp
 
 # Subprojects
 .build-subprojects:

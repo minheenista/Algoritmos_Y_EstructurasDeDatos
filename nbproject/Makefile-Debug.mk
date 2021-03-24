@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o
+	${OBJECTDIR}/TareaOrdenamiento.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras.exe: ${OBJECTF
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o: ../../../Downloads/ordenamiento.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/8209c8dc
+${OBJECTDIR}/TareaOrdenamiento.o: TareaOrdenamiento.cpp
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/8209c8dc/ordenamiento.o ../../../Downloads/ordenamiento.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TareaOrdenamiento.o TareaOrdenamiento.cpp
 
 # Subprojects
 .build-subprojects:
