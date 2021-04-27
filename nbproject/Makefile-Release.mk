@@ -35,7 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/BusquedaBinaria.o \
+	${OBJECTDIR}/BusquedaSecuencial.o \
+	${OBJECTDIR}/Factorial.o \
+	${OBJECTDIR}/Fibonacci.o \
+	${OBJECTDIR}/NumeroPrimoRecursividad.o \
 	${OBJECTDIR}/TareaOrdenamiento.o \
+	${OBJECTDIR}/busqueda.o \
+	${OBJECTDIR}/busqueda2.o \
 	${OBJECTDIR}/ejemplo02.o \
 	${OBJECTDIR}/ejercicio01.o \
 	${OBJECTDIR}/tarea_ejercicio01.o \
@@ -67,10 +74,45 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras.exe: ${OBJECTF
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmosyestructuras ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/BusquedaBinaria.o: BusquedaBinaria.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BusquedaBinaria.o BusquedaBinaria.cpp
+
+${OBJECTDIR}/BusquedaSecuencial.o: BusquedaSecuencial.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BusquedaSecuencial.o BusquedaSecuencial.cpp
+
+${OBJECTDIR}/Factorial.o: Factorial.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Factorial.o Factorial.cpp
+
+${OBJECTDIR}/Fibonacci.o: Fibonacci.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fibonacci.o Fibonacci.cpp
+
+${OBJECTDIR}/NumeroPrimoRecursividad.o: NumeroPrimoRecursividad.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NumeroPrimoRecursividad.o NumeroPrimoRecursividad.cpp
+
 ${OBJECTDIR}/TareaOrdenamiento.o: TareaOrdenamiento.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TareaOrdenamiento.o TareaOrdenamiento.cpp
+
+${OBJECTDIR}/busqueda.o: busqueda.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/busqueda.o busqueda.cpp
+
+${OBJECTDIR}/busqueda2.o: busqueda2.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/busqueda2.o busqueda2.cpp
 
 ${OBJECTDIR}/ejemplo02.o: ejemplo02.cpp
 	${MKDIR} -p ${OBJECTDIR}
