@@ -45,6 +45,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/busqueda2.o \
 	${OBJECTDIR}/ejemplo02.o \
 	${OBJECTDIR}/ejercicio01.o \
+	${OBJECTDIR}/invertirNumero.o \
+	${OBJECTDIR}/restasSucesivas.o \
+	${OBJECTDIR}/sumaDigitos.o \
+	${OBJECTDIR}/sumaRecursiva.o \
 	${OBJECTDIR}/tarea_ejercicio01.o \
 	${OBJECTDIR}/tarea_ejercicio02.o \
 	${OBJECTDIR}/tarea_ejercicio03.o
@@ -123,6 +127,26 @@ ${OBJECTDIR}/ejercicio01.o: ejercicio01.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ejercicio01.o ejercicio01.cpp
+
+${OBJECTDIR}/invertirNumero.o: invertirNumero.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/invertirNumero.o invertirNumero.cpp
+
+${OBJECTDIR}/restasSucesivas.o: restasSucesivas.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/restasSucesivas.o restasSucesivas.cpp
+
+${OBJECTDIR}/sumaDigitos.o: sumaDigitos.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/sumaDigitos.o sumaDigitos.cpp
+
+${OBJECTDIR}/sumaRecursiva.o: sumaRecursiva.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/sumaRecursiva.o sumaRecursiva.cpp
 
 ${OBJECTDIR}/tarea_ejercicio01.o: tarea_ejercicio01.cpp
 	${MKDIR} -p ${OBJECTDIR}

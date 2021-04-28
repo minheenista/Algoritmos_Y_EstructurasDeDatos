@@ -22,6 +22,10 @@
       <itemPath>busqueda2.cpp</itemPath>
       <itemPath>ejemplo02.cpp</itemPath>
       <itemPath>ejercicio01.cpp</itemPath>
+      <itemPath>invertirNumero.cpp</itemPath>
+      <itemPath>restasSucesivas.cpp</itemPath>
+      <itemPath>sumaDigitos.cpp</itemPath>
+      <itemPath>sumaRecursiva.cpp</itemPath>
       <itemPath>tarea_ejercicio01.cpp</itemPath>
       <itemPath>tarea_ejercicio02.cpp</itemPath>
       <itemPath>tarea_ejercicio03.cpp</itemPath>
@@ -88,6 +92,14 @@
       <item path="ejemplo02.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ejercicio01.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="invertirNumero.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="restasSucesivas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sumaDigitos.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sumaRecursiva.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tarea_ejercicio01.cpp" ex="false" tool="1" flavor2="0">
       </item>
